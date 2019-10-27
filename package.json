@@ -9,7 +9,7 @@
     "electron-build": "bash .bin/electron-build.sh",
     "server": "node ./socketTest/index.js",
     "electron-builder": "bash .bin/builder.sh",
-    "gh-pages": "gh-pages -d build -b gh-pages"
+    "gh-pages": "gh-pages -d app -b gh-pages"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
