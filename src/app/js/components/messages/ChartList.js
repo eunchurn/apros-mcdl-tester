@@ -4,7 +4,6 @@ import Chart from "./Chart";
 const App = ({ message }) => {
   return (
     <div>
-      <header>MCDL MQTT Client</header>
       {message ? (
         <div>
           <Chart
