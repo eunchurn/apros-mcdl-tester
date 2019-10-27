@@ -394,7 +394,8 @@ body {
   padding: 4px 0;
   /* Vertical padding around content */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   padding: 0 4px;
   /* Horizontal padding of content */ }
 
@@ -481,7 +482,7 @@ body {
   left: 0;
   right: 0;
   top: -50px;
-  bottom: -20px;
+  bottom: 0;
   overflow: hidden; }
 
 .CodeMirror-ruler {
@@ -683,7 +684,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   min-height: 1px;
   /* prevents collapsing before first draw */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   /* Reset some styles that the rest of the page might have set */
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -704,7 +706,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   -webkit-font-variant-ligatures: contextual;
   font-variant-ligatures: contextual; }
 
-.CodeMirror-wrap pre {
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: normal; }
@@ -798,5 +801,3 @@ div.CodeMirror-dragcursors {
 /* Help users use markselection to safely style text background */
 span.CodeMirror-selectedtext {
   background: none; }
-
-/*# sourceMappingURL=style.css.map */
