@@ -1,0 +1,4 @@
+productName: APROS MCDL Tester
+directories:
+  buildResources: icons
+  output: dist
