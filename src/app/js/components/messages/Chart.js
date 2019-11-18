@@ -6,8 +6,21 @@ import {
   ChartRow,
   YAxis,
   LineChart,
+  Baseline,
   Resizable
 } from "react-timeseries-charts";
+
+const baselineStyleLite = {
+    line: {
+        stroke: "steelblue",
+        strokeWidth: 1,
+        opacity: 0.5
+    },
+    label: {
+        fill: "red",
+        stroe: "red"
+    }
+};
 
 const Chart = props => {
   const { title, data, time } = props;
@@ -48,6 +61,9 @@ const Chart = props => {
           />
           <Charts>
             <LineChart axis="axis1" series={series} column={["Acc"]} />
+            <Baseline axis="axis1" style={baselineStyleLite} value={series.max()} label={`Max: ${series.max()}`} position="right" />
+            <Baseline axis="axis1" style={baselineStyleLite} value={series.min()} label={`Max: ${series.min()}`} position="right" />
+            <Baseline axis="axis1" style={baselineStyleLite} value={series.avg()} label={`Mean: ${series.avg()}`} position="right" />
           </Charts>
         </ChartRow>
       </ChartContainer>
